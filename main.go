@@ -43,7 +43,7 @@ func sendMessage(baseURL string, chatID string, message string) {
 func main() {
 	err := godotenv.Load()
 	if err != nil {
-		log.Fatal("Error loading .env file")
+		log.Println("Error loading .env file")
 	}
 
 	botURL := os.Getenv("BOT_URL")
